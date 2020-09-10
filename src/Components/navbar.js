@@ -3,13 +3,13 @@ import styled from 'styled-components'
 
 const Navbar = (props) => {
     return (
-      <StyledNavbar className="navbar-wrapper">
-        <div className="links">
+      <StyledNavbar>
+        
                 <StyledA href="#">Home</StyledA>
                 <StyledA href="#">About</StyledA>
                 <StyledA href="#">FAQ</StyledA>
                 <StyledA href="#">Contact</StyledA>
-        </div>
+        
       </StyledNavbar>
     );
   };

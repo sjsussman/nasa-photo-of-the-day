@@ -1,8 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
-import Navbar from './navbar'
-//can I take a style div from a another component?
-//fix width
 
 const StyledNavbar = styled.div`
   background: ${props => props.theme.black};

@@ -9,25 +9,6 @@ import styled from 'styled-components'
 
 function App() {
 
-  const [photo, setPhoto] = useState('')
-  const [description, setDescription] = useState('')
-
-  useEffect(() =>{
-
-  axios.get('https://api.nasa.gov/planetary/apod?api_key=5Ggvu4nrP1E3Xumg1juYqcfkmEybVQIfmqLBCwz7')
-  .then(res =>{
-    setPhoto(res.data.url)
-    setDescription(res.data.explanation)
-    console.log(res.data)
-  })
-
-  .catch(err =>{
-
-  })
-
-}, []) // end of effect hook
-
-
 const StyledDiv = styled.div`
   background : ${props => props.theme.secondaryColor};
   `
@@ -36,7 +17,7 @@ const StyledDiv = styled.div`
     <StyledDiv className="App">
       <Navbar />
       <Title />
-      <ImgContainer photo = {photo} setPhoto = {setPhoto} description = {description} setDescription = {setDescription}/>
+      <ImgContainer />
       <Footer />
     </StyledDiv>
   );
