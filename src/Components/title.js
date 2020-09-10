@@ -15,7 +15,7 @@ background : ${props => props.theme.black};
 
 const StyledH1 = styled.h1`
 background: ${props => props.theme.black};
-color: ${props => props.theme.white};
+color: ${props => props.theme.thirdColor};
 `
 
 export default Title;
