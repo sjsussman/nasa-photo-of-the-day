@@ -5,7 +5,6 @@ const ImgContainer = (props) =>{
     return (
         
         <div className = 'imageContainer'>
-            <h1>Image Container</h1>
             <img 
             className = 'photo' 
             src ={ photo }

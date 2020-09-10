@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -37,8 +38,3 @@
   }
 }
 
-
-.links {
-  display: flex;
-  justify-content: space-around;
-}

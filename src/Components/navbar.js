@@ -1,16 +1,33 @@
 import React, { useState, useEffect } from 'react'
+import styled from 'styled-components'
 
 const Navbar = (props) => {
     return (
-      <div className="navbar-wrapper">
+      <StyledNavbar className="navbar-wrapper">
         <div className="links">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">FAQ</a>
-                <a href="#">Contact</a>
+                <StyledA href="#">Home</StyledA>
+                <StyledA href="#">About</StyledA>
+                <StyledA href="#">FAQ</StyledA>
+                <StyledA href="#">Contact</StyledA>
         </div>
-      </div>
+      </StyledNavbar>
     );
   };
+
+const StyledNavbar = styled.div`
+  background: ${props => props.theme.black};
+  height: ${props => props.theme.navHeight};
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+
+const StyledA = styled.a `
+margin: ${props => props.theme.anchorMargin};
+font-size: ${props => props.theme.anchorSize};
+color: ${props => props.theme.white};
+text-decoration: none;
+`
+
 
 export default Navbar;
